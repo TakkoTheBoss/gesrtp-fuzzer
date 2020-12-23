@@ -1,6 +1,6 @@
 import os, sys, re, struct, socket, random
 from . import pySRTP_msg
-from .pySRTP_msg import BASE_MSG, ALLBYTES_MSG, ANY_MSG
+from .pySRTP_msg import ALLBYTES_MSG, ANY_MSG
 
 class pySrtp:
     def __init__(self, ip, port):
@@ -9,7 +9,6 @@ class pySrtp:
         else:
             self.port = port
         self.ip = ip
-        self.BASE_MSG = pySRTP_msg.BASE_MSG
         self.SERVICE_REQUEST_CODE = pySRTP_msg.SERVICE_REQUEST_CODE
         self.socket_conn=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         if not ip:
