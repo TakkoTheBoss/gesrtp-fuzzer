@@ -1,5 +1,5 @@
 # GE-SRTP Input Fuzzer
-A fuzzer for testing GE's Service Request Transport Protocol (SRTP), which is an industrial protocol native to their FANUC/Intelligent Platforms PLCs. Documentation on this protocol are not made public by GE, but anyone with a computer, WireShark, and a GE FANUC PLC can disect requests from HMI to the PLC and visa versa.
+A fuzzer for testing GE's Service Request Transport Protocol (SRTP), which is an industrial protocol native to their FANUC/Intelligent Platforms PLCs. Documentation on this protocol is not made public by GE, but anyone with a computer, WireShark, and a GE FANUC PLC can disect requests from HMI to the PLC and visa versa.
 
 [GE-SRTP Research Paper](https://www.sciencedirect.com/science/article/pii/S1742287617301925). 
 
