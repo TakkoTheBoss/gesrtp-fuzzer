@@ -28,6 +28,10 @@ Type = `r`
 ` python3 srtpFuzz.py 0.0.0.0 18245 r 100000 `
 
 ### Output ###
+#### Save to File ####
+Appending `>> $FILENAME` to any of the above run commands will save it to a file of your choice.
+E.g.
+`python3 srtpFuzz.py 0.0.0.0 18245 d 100000 >> DumbfuzzyWuzzy-Output_12-22-20.txt`
 #### Responses ####
 - Successful responses are returned with **x03** as the first byte (byte[0])
 - Errors are returned with **x05** as the first byte (byte[0])
