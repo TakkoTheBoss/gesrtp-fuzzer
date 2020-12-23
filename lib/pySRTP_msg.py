@@ -314,7 +314,7 @@ ALLBYTES_MSG = [
     b'\xFF'  # 261
 ]
 
-# Used at byte locaiton 42
+# byte 42
 SERVICE_REQUEST_CODE = {
     "PLC_STATUS"             : b'\x00',
     "RETURN_PROG_NAME"       : b'\x03',
@@ -338,7 +338,7 @@ SERVICE_REQUEST_CODE = {
     "TOGGLE_FORCE_SYSTEM_MEM": b'\x44'
 }
 
-# Used at byte locaiton 43
+# byte 43
 MEMORY_TYPE_CODE = {
     "R"  :   b'\x08',    # Register (Str)
     "AI" :   b'\x0a',    # Analog Input (Str)
