@@ -218,27 +218,6 @@ class pySrtp:
         # print("FUZZ MSG: " + bytes_to_send + "\n")
         self.sendSocketCommand(bytes_to_send)
         return(bytes_to_send)
-    #################
-    # RANDOM MESSAGE#
-    #################
-    def random(self):
-        bytes_to_send = b''.join(pySRTP_msg.BASE_MSG.copy())
-        self.sendSocketCommand(bytes_to_send)
-    ###########################################################
-    # Generates command string to send to PLC for reading
-    # time.
-    # Returns: Bytearray for sending via socket.
-    ###########################################################
-    def readDateTime(self):
-        try:
-            tmp = self.BASE_MSG.copy()
-            tmp[42] = self.SERVICE_REQUEST_CODE["RETURN_DATETIME"]
-            arr = tmp
-            self.printArrDebug(arr)
-            return(arr)
-        except Exception as err:
-            print(err)
-            return(None)
     ###########################################################
     # Decodes message response printing basic info.
     ###########################################################
